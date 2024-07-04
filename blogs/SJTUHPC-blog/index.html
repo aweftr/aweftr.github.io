@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet"><meta name="generator" content="Astro v4.10.3"><title>交我算使用方法</title><link rel="stylesheet" href="/_astro/HuaweiQoS2Progress-blog.BdseFKDG.css"></head> <body class="bg-white text-[#373A40] dark:bg-[#222831] dark:text-[#EEEEEE]"> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();;(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="Z2r6Mls" component-url="/_astro/MyHeader.T4IeqX7w.js" component-export="default" renderer-url="/_astro/client.zaajod0j.js" props="{}" ssr="" client="only" opts="{&quot;name&quot;:&quot;MyHeader&quot;,&quot;value&quot;:&quot;react&quot;}"></astro-island> <!-- <img class="absolute isolate blur-none object-contain opacity-50 -z-10" src="https://images.unsplash.com/photo-1493382051629-7eb03ec93ea2" alt="background image!"> -->  <div class="bg-fixed bg-cover min-h-screen bg-no-repeat blur-none p-3 md:p-32 bg-[url(https://images.unsplash.com/photo-1712909542768-e87b026dfc4d)] dark:bg-[url(https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43)] lg:bg-[url(https://images.unsplash.com/photo-1658498549747-6147163202cc)] dark:lg:bg-[url(https://images.unsplash.com/photo-1602525036133-f07294d74bac)]"> <div class="mx-auto mt-16 md:mt-0 bg-blend-screen max-w-5xl opacity-90">  <div class="text-xl text-center m-5"> <h1 class="text-4xl font-bold text-center m-6">交我算使用方法</h1> <div class="text-left space-y-2"> <p>很多同学反映交我算跑不起来代码，这里介绍跑代码的一些简单方式。</p> <p>
+交大 HPC 目前我们经常使用的集群是：“思源一号”高性能计算平台，AI
+        平台。其中AI平台是老平台，用的是Tesla V100 GPU，而思源一号是 2022
+        年新上线的平台，用的是更新一代的 A100 40GB，根据 NVIDIA
+        官网给出的数据，性能远高于V100。同时因为新平台新上线的优势，大部分使用
+        A100GPU 是不用排队的，而很多电院的老师还在用AI平台，导致 AI
+        平台使用需要排队，所以强烈推荐大家使用思源一号平台。
+</p> <div class="flex justify-center"> <img src="/_astro/nvidia-a100-3x-fp16-ai-training-2c50-d.fGDJa59L_Z28Cy4t.svg" alt="20231019 log Image" class="w-full lg:w-2/3 bg-gray-50 opacity-80" width="630" height="288" loading="lazy" decoding="async"> </div> <h2 class="text-2xl font-semibold">平台连接</h2> <p>
+和学长沟通获取账号与密码/秘钥，秘钥连接更省心。建议安装 <a href="https://mobaxterm.mobatek.net/" class="font-bold underline">MobaXterm</a>（可以记住连接各种设置，比如密码），Linux 系统直接写 Linux SSH Config
+        文件连接。连接上请在根目录下创建自己的文件夹，防止和他人冲突。
+</p><p>AI 平台连接域名：login.hpc.sjtu.edu.cn</p> <p>思源一号</p> <ul class="list-disc list-inside"> <li>连接域名：sylogin.hpc.sjtu.edu.cn</li> <li>CPU 队列：64c512g</li> <li>GPU 队列：a100</li> </ul> <h2 class="text-2xl font-semibold">软件配置</h2> <p>我们常用的软件为 conda 和 python。</p> <p>
+因为配置软件设计下载编译等操作，所以请先申请节点再进行软件配置，否则可能会被限制CPU使用率，严重可能加入黑名单无法使用集群。
+</p> <p>
+conda 通过
+<span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> module load miniconda3 </span>
+加载，通过 <span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> source activate [env] </span> 激活虚拟环境（不用执行
+<span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> conda init </span>），通过 <span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> conda deactivate </span> 退出虚拟环境。可以将 <span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> module load miniconda3 </span>
+加入用户的 <span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> ~/.bashrc </span> 中，省去加载步骤。之后使用
+          conda 安装 python 环境和平时使用是一样的。
+</p> <h2 class="text-2xl font-semibold">申请节点/提交作业</h2> <p>可以通过脚本提交作业或者交互式使用资源，写代码调试时可以先申请 CPU 资源进行交互式作业，调试完成跑实验时可以再使用 GPU 队列。</p> <p>思源一号 CPU 交互式作业（申请一个节点，4个核）：</p> <div class="overflow-auto"> <pre class="bg-gray-300 dark:bg-slate-600 rounded font-mono p-0 m-0"><code>srun -p 64c512g -N 1 -n 4 --pty /bin/bash</code></pre> </div> <p>思源一号 GPU 交互式作业（申请一个节点，6个CPU核，1张 a100）：</p> <div class="overflow-auto"> <pre class="bg-gray-300 dark:bg-slate-600 rounded font-mono p-0 m-0"><code>srun -p a100 -N 1 -n 6 --gres=gpu:1 --pty /bin/bash</code></pre> </div> <p>思源一号脚本提交 <span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> run.slurm </span> (申请一个节点，6个CPU核，1张 a100）：</p> <div class="overflow-auto"> <pre class="bg-gray-300 dark:bg-slate-600 rounded font-mono p-0 m-0"><code>#!/bin/bash
+
+#SBATCH --job-name=[your_job_name]
+#SBATCH --partition=a100
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=6
+#SBATCH --gres=gpu:1            #若使用 2 块卡，就给 gres=gpu:2
+#SBATCH --output=%j.out
+#SBATCH --error=%j.err
+
+source activate your_conda_env
+python [your_code.py]</code></pre> </div> <p>思源一号 64c512g 脚本提交 (申请一个节点，只使用CPU核，6个）：</p> <div class="overflow-auto"> <pre class="bg-gray-300 dark:bg-slate-600 rounded font-mono p-0 m-0"><code>#!/bin/bash
+
+#SBATCH --job-name=[your_job_name]
+#SBATCH --partition=64c512g
+#SBATCH -n 6
+#SBATCH --output=%j.out
+#SBATCH --error=%j.err
+
+source activate your_conda_env
+python [your_code.py]</code></pre> </div> <h2 class="text-2xl font-semibold">常用命令</h2> <p><span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> sinfo </span> 查看总体资源情况：</p> <div class="overflow-auto"> <pre class="bg-gray-300 dark:bg-slate-600 rounded font-mono p-0 m-0"><code>$ sinfo
+PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST
+cpu         up  7-00:00:0    656   idle cas[001-656]
+dgx2        up  7-00:00:0      8   idle vol[01-08]</code></pre> </div> <p><span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> squeue </span> 查看作业情况（常用指令，交互式执行跑完后一定要看看作业是否在执行，如果还在执行请用 <span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> scancel </span> 取消作业）：</p> <div class="overflow-auto"> <pre class="bg-gray-300 dark:bg-slate-600 rounded font-mono p-0 m-0"><code>[seegxf-1@gpu06 ~]$ squeue
+JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+16349782      a100     bash seegxf-1  R       0:02      1 gpu06</code></pre> </div> <p><span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> sacct </span> 查看作业完成情况：</p> <div class="overflow-auto"> <pre class="bg-gray-300 dark:bg-slate-600 rounded font-mono p-0 m-0"><code>[seegxf-1@gpu06 ~]$ sacct -b
+JobID             State ExitCode
+------------ ---------- --------
+16346958         FAILED      2:0
+16346958.ex+  COMPLETED      0:0
+16346958.0    COMPLETED      0:0</code></pre> </div> <p><span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> scancel JobId </span> 取消作业</p> <p><span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> salloc </span> 申请资源（提前申请资源并占据该资源 24 小时，需要分时段跑很多代码用这个比较适合，因为不用重新排队了，申请到的资源一直被你占用，不过跑完代码别忘了使用 <span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> scancel </span> 取消资源，不然一直扣费！）：</p> <div class="overflow-auto"> <pre class="bg-gray-300 dark:bg-slate-600 rounded font-mono p-0 m-0"><code>salloc -p a100 -N 1 -n 6 --gres=gpu:1 -t 24:00:00</code></pre> </div> <p>通过 <span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> squeue </span> 查询到申请资源的节点名，通过 <span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> ssh 节点名 </span> 即可登录申请的节点。</p> <div class="overflow-auto"> <pre class="bg-gray-300 dark:bg-slate-600 rounded font-mono p-0 m-0"><code>$ salloc -p a100 -N 1 -n 6 --gres=gpu:1 -t 24:00:00
+ salloc: Granted job allocation 16350463
+ salloc: Waiting for resource configuration
+ salloc: Nodes gpu01 are ready for job
+$ squeue
+JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+16350463      a100 interact seegxf-1  R       0:12      1 gpu01
+$ ssh gpu01</code></pre> </div> <h2 class="text-2xl font-semibold">工具</h2> <p>使用 <a href="https://code.visualstudio.com/" class="font-bold underline">Visual Studio Code</a>，结合插件 <span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> python </span>, <span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> Remote-SSH </span>，编写代码。vscode 中的终端默认登录的是登录节点，如果是交互式执行，需要手动切换到对应计算节点中去。比如通过 <span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> srun </span> 申请到了节点 <span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> gpu06 </span>，在 vscode 终端里面 <span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> ssh gpu06 </span> 即可方便执行调试代码。</p> <h2 class="text-2xl font-semibold">更多材料</h2> <ul class="list-disc list-inside"> <li>官方文档：<a href="https://docs.hpc.sjtu.edu.cn/" class="font-bold underline">https://docs.hpc.sjtu.edu.cn/</a></li> <li>HPC 官网：<a href="https://hpc.sjtu.edu.cn/" class="font-bold underline">https://hpc.sjtu.edu.cn/</a></li> <li>运行情况：<a href="https://account.hpc.sjtu.edu.cn/top/" class="font-bold underline">https://account.hpc.sjtu.edu.cn/top/</a></li> </ul>  </div> </div> </div> </div>  <script>
+  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+  if (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+</script></body></html>
