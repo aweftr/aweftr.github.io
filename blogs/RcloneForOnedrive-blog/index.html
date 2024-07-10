@@ -1,0 +1,144 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Astro description"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet"><meta name="generator" content="Astro v4.10.3"><title>Rclone 挂载 Onedrive 本地硬盘</title><link rel="stylesheet" href="/_astro/HuaweiQoS2Progress-blog.BdseFKDG.css"></head> <body class="bg-white text-[#373A40] dark:bg-[#222831] dark:text-[#EEEEEE]"> <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).only=e;window.dispatchEvent(new Event("astro:only"));})();;(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t)},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="Z2r6Mls" component-url="/_astro/MyHeader.T4IeqX7w.js" component-export="default" renderer-url="/_astro/client.zaajod0j.js" props="{}" ssr="" client="only" opts="{&quot;name&quot;:&quot;MyHeader&quot;,&quot;value&quot;:&quot;react&quot;}"></astro-island> <!-- <img class="absolute isolate blur-none object-contain opacity-50 -z-10" src="https://images.unsplash.com/photo-1493382051629-7eb03ec93ea2" alt="background image!"> -->  <div class="bg-fixed bg-cover min-h-screen bg-no-repeat blur-none p-3 md:p-32 bg-[url(https://images.unsplash.com/photo-1712909542768-e87b026dfc4d)] dark:bg-[url(https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43)] lg:bg-[url(https://images.unsplash.com/photo-1658498549747-6147163202cc)] dark:lg:bg-[url(https://images.unsplash.com/photo-1602525036133-f07294d74bac)]"> <div class="mx-auto mt-16 md:mt-0 bg-blend-screen max-w-5xl opacity-90">  <div class="text-xl text-center m-5"> <h1 class="text-4xl font-bold text-center m-6">Rclone 挂载 Onedrive 本地硬盘</h1> <div class="text-left space-y-2"> <p>在Windows中通过Onedrive进行文件备份同步是非常方便的，而Linux中通过Rclone也能够很方便的使用Onedrive服务。如果有自己的WebDAV服务，也可以根据本文操作进行挂载。</p> <h2 class="text-2xl font-semibold">1. 安装Rclone</h2> <p>我使用的是发行版是Arch，通过 <span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> pacman -S rclone </span> 安装，其他发行版通过各自的包管理器进行安装。</p> <h2 class="text-2xl font-semibold">2. 获取Onedrive API（可选）</h2> <p>此步骤可省略，直接调至步骤3。</p> <p>因为rclone如果没有在配置文件中指定client_id，会使用默认的Client ID与Onedrive进行连接。而此Client ID被所有使用默认设置的用户共享，可能导致限流。所以有必要额外申请一个自己的Client ID，以下为具体步骤：</p> <ul class="list-disc list-inside"> <li>打开<a href="https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade" class="font-semibold underline">azure网站</a>，登陆相应账号，点击New registration</li> <li>输入应用名称，选择账号类型Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)，Redirect URI中选择Web，然后输入http://localhost:53682/，点击注册，记录此时的Application (client) ID。</li> <li>接下来选择Certificates & secrets，点击New client secret。输入描述并且设置Expires至24 months。记录secret Value（之后无法再获取）。</li> <li>改变API permissions，添加或修改已有Microsoft Graph，类型是delegated。</li> <li>搜索添加以下权限: `Files.Read`, `Files.ReadWrite`, `Files.Read.All`, `Files.ReadWrite.All`, `offline_access`, `User.Read`, `Sites.Read.All`</li> </ul> <p>至此API已经申请完毕，可以配置Rclone的相关设置。</p> <h2 class="text-2xl font-semibold">3. 配置Rclone</h2> <p>执行<span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> rclone config </span>，如果第二步获取了API的ID与Secret，可根据提示输入，以下为示例：<div class="overflow-auto"> <pre class="bg-gray-300 dark:bg-slate-600 rounded font-mono p-0 m-0"><code>No remotes found, make a new one?
+n) New remote
+s) Set configuration password
+q) Quit config
+n/s/q&gt; n
+
+Enter name for new remote.
+name&gt; onedrive
+
+Option Storage.
+Type of storage to configure.
+Choose a number from below, or type in your own value.
+31 / Microsoft OneDrive
+    (onedrive)
+
+Storage&gt; 31
+
+Option client_id.
+OAuth Client Id.
+Leave blank normally.
+Enter a value. Press Enter to leave empty.
+client_id&gt;
+
+Option client_secret.
+OAuth Client Secret.
+Leave blank normally.
+Enter a value. Press Enter to leave empty.
+client_secret&gt; 
+
+Option region.
+Choose national cloud region for OneDrive.
+Choose a number from below, or type in your own string value.
+Press Enter for the default (global).
+ 1 / Microsoft Cloud Global
+    (global)
+ 2 / Microsoft Cloud for US Government
+    (us)
+ 3 / Microsoft Cloud Germany
+    (de)
+ 4 / Azure and Office 365 operated by Vnet Group in China
+    (cn)
+region&gt; 1
+
+Edit advanced config?
+y) Yes
+n) No (default)
+y/n&gt; n
+
+Use web browser to automatically authenticate rclone with remote?
+ * Say Y if the machine running rclone has a web browser you can use
+ * Say N if running rclone on a (remote) machine without web browser access
+If not sure try Y. If Y failed, try N.
+
+y) Yes (default)
+n) No
+y/n&gt; y
+
+&lt;5&gt;NOTICE: Make sure your Redirect URL is set to &quot;http://localhost:53682/&quot; in your custom config.
+&lt;5&gt;NOTICE: If your browser doesn&#39;t open automatically go to the following link: http://127.0.0.1:53682/auth?state=sLCXIMZjd-1ybXR8FbqbWA
+&lt;5&gt;NOTICE: Log in and authorize rclone for access
+&lt;5&gt;NOTICE: Waiting for code...
+&lt;5&gt;NOTICE: Got code
+Option config_type.
+Type of connection
+Choose a number from below, or type in an existing string value.
+Press Enter for the default (onedrive).
+ 1 / OneDrive Personal or Business
+    (onedrive)
+ 2 / Root Sharepoint site
+    (sharepoint)
+   / Sharepoint site name or URL
+ 3 | E.g. mysite or https://contoso.sharepoint.com/sites/mysite
+    (url)
+ 4 / Search for a Sharepoint site
+    (search)
+ 5 / Type in driveID (advanced)
+    (driveid)
+ 6 / Type in SiteID (advanced)
+    (siteid)
+   / Sharepoint server-relative path (advanced)
+ 7 | E.g. /teams/hr
+    (path)
+config_type&gt; 1
+
+Option config_driveid.
+Select drive you want to use
+Choose a number from below, or type in your own string value.
+Press Enter for the default (22xxxbf).
+ 1 /  (personal)
+    (22xxxbf)
+config_driveid&gt; 
+
+Drive OK?
+
+Found drive &quot;root&quot; of type &quot;personal&quot;
+URL: https://onedrive.live.com/?cid=22xxxbf
+
+y) Yes (default)
+n) No
+y/n&gt; y
+
+Configuration complete.
+Options:
+...
+Current remotes:
+
+Name                 Type
+====                 ====
+onedrive             onedrive
+
+e) Edit existing remote
+n) New remote
+d) Delete remote
+r) Rename remote
+c) Copy remote
+s) Set configuration password
+q) Quit config
+e/n/d/r/c/s/q&gt; q</code></pre> </div></p> <p>配置完成可以执行<span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> rclone ls _your_remote_name_: </span> 若有输出则配置成功。</p> <p>通过<span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> rclone mount _your_remote_name_: /mnt/onedrive </span>即可挂载onedrive到文件夹使用～</p> <h2 class="text-2xl font-semibold">4. 配置systemd挂载</h2> <div class="overflow-auto"> <pre class="bg-gray-300 dark:bg-slate-600 rounded font-mono p-0 m-0"><code>#/etc/systemd/system/mnt-onedrive.mount
+[Unit]
+After=network-online.target
+[Mount]
+Type=rclone
+What=onedrive:
+Where=/mnt/onedrive
+Options=rw,allow_other,args2env,vfs-cache-mode=writes,config=/etc/rclone.conf,cache-dir=/var/rclone</code></pre> </div> <p>注意挂载文件夹的路径和unit文件名必须相符，比如<span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> /mnt/onedrive </span>对应<span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> mnt-onedrive.mount </span>。此外Options中的config选项为之前通过<span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> rclone config </span>生成的设置文件，通常在<span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> ~/home/.config/rclone/rclone.conf </span>。另外需要注意unit文件中只支持文件夹的绝对路径，所以～不能使用，请自行补全！</p> <p>如果需要自动挂载则添加下面automount文件，不过一般没必要开机挂载，占资源。</p> <div class="overflow-auto"> <pre class="bg-gray-300 dark:bg-slate-600 rounded font-mono p-0 m-0"><code># /etc/systemd/system/mnt-onedrive.automount
+[Unit]
+After=network-online.target
+Before=remote-fs.target
+[Automount]
+Where=/mnt/onedrive
+TimeoutIdleSec=600
+[Install]
+WantedBy=multi-user.target</code></pre> </div> <p>通过 <span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> systemctl enable mnt-onedrive.automount </span> 即可自动挂载。</p> <h2 class="text-2xl font-semibold">注意事项</h2> <ul class="list-disc list-inside"> <li>任何使用rclone删除的文件都会出现在onedrive的垃圾箱中，微软没有提供API彻底删除文件或清空垃圾箱，所以需要自己去相应onedrive应用中手动删除。</li> <li>超过三个月（90天）没用rclone会导致refresh token失效，需要通过<span class="bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 rounded font-mono text-red-500"> rclone config reconnect remote: </span>获取新token。</li> </ul> </div> </div> </div> </div>  <script>
+  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+  if (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+</script></body></html>
